@@ -21,7 +21,7 @@ const About = () => {
 				/>
 				<div>
 					<h2
-						className={`${architectsDaughter.className} text-4xl leading-normal text-blue-400 uppercase`}
+						className={`${architectsDaughter.className} text-3xl leading-normal text-blue-400 uppercase`}
 					>
 						Entrepreneur. Leader. Philanthropists
 					</h2>
