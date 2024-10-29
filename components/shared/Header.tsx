@@ -7,7 +7,7 @@ import { MobileNavbar } from "./MobileNavbar";
 
 const Header = () => {
 	return (
-		<header className="py-8">
+		<header className="py-4">
 			<div className="container text-white flex items-center justify-between gap-4">
 				<Link href="/">
 					<AnimatedTooltip />

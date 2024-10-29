@@ -12,7 +12,7 @@ const Why = () => {
 		<div className="py-12">
 			<div className="container">
 				<h2
-					className={`${architectsDaughter.className} text-4xl leading-normal text-blue-400 uppercase text-center`}
+					className={`${architectsDaughter.className} text-3xl md:text-4xl leading-normal text-blue-400 uppercase text-center`}
 				>
 					Why Business Masterclass?
 				</h2>
