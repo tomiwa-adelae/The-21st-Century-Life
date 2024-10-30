@@ -22,7 +22,7 @@ const Showcase = () => {
 					<h1
 						className={`${architectsDaughter.className} text-4xl sm:text-5xl lg:text-6xl uppercase leading-snug md:leading-snug lg:leading-snug`}
 					>
-						Embrace the 21st Century
+						Business Sustenance in the New Normal
 					</h1>
 					<p className="text-xs md:text-sm text-gray-200 leading-loose md:leading-loose">
 						Dive into the innovations and breakthroughs that define
