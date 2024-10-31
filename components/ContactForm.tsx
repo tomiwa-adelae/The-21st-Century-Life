@@ -173,7 +173,14 @@ export function ContactForm() {
 							</FormItem>
 						)}
 					/>
-					<Button variant={"white"} type="submit">
+					<Button
+						onClick={() => {
+							if (!phoneNumber)
+								setError("Phone number must be included.");
+						}}
+						variant={"white"}
+						type="submit"
+					>
 						Submit
 					</Button>
 				</form>
