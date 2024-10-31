@@ -1,0 +1,68 @@
+import Header from "@/components/shared/Header";
+import { Separator } from "@/components/ui/separator";
+import { contactDetails } from "@/constants";
+import React from "react";
+import { Architects_Daughter } from "next/font/google";
+import { ContactForm } from "@/components/ContactForm";
+
+const architectsDaughter = Architects_Daughter({
+	subsets: ["latin"],
+	weight: ["400"],
+});
+
+const page = () => {
+	return (
+		<div>
+			<Header />
+			<div className="container">
+				<Separator />
+			</div>
+			<div className="container grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-4 py-12">
+				<div>
+					<div className="grid gap-6">
+						{contactDetails.map((details, index) => {
+							const Icon = details.icon;
+							return (
+								<div
+									key={index}
+									className="flex items-start gap-3"
+								>
+									<div className="p-2 rounded-md border inline-block">
+										<Icon className="w-4 h-4" />
+									</div>
+									<div>
+										<h3 className="font-semibold text-base uppercase">
+											{details.title}
+										</h3>
+										<p className="text-[13px] text-gray-700 mt-1">
+											{details.description}
+										</p>
+										<p className="text-[13px] font-semibold mt-2">
+											{details.cta}
+										</p>
+									</div>
+								</div>
+							);
+						})}
+					</div>
+				</div>
+				<div className="col-span-2 bg-blue-400 py-8 px-4 lg:px-8 rounded-lg text-white">
+					<h1
+						className={`${architectsDaughter.className} text-2xl md:text-3xl lg:text-4xl uppercase leading-snug md:leading-snug lg:leading-snug`}
+					>
+						Got ideas? Get in touch
+					</h1>
+					<p className="text-sm leading-8 mt-2">
+						We’re here to answer any questions about the Business
+						Masterclass, registration details, or general inquiries.
+						Feel free to reach out to us using the contact details
+						below or by filling out the form.
+					</p>
+					<ContactForm />
+				</div>
+			</div>
+		</div>
+	);
+};
+
+export default page;

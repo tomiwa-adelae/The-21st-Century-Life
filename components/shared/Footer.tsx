@@ -1,23 +1,21 @@
 import { Facebook, Linkedin, Twitter, Youtube } from "lucide-react";
 import React from "react";
 import { Separator } from "../ui/separator";
+import { address, emailAddress } from "@/constants";
 
 const Footer = () => {
 	return (
 		<div className="py-8">
 			<div className="container">
 				<div className="flex flex-col md:flex-row items-center text-center md:text-left justify-between gap-8 md:gap-4 pb-8">
-					<h3 className="font-semibold text-sm">
-						Metropolitan Club, 15 Kofo Abayomi St. Victoria Island,
-						Lagos
-					</h3>
+					<h3 className="font-semibold text-sm">{address}</h3>
 					<div className="flex md:flex-col items-center justify-center gap-2 font-semibold text-sm">
 						<h3 className="uppercase">Contact us</h3>
 						<a
-							href={`mailto:info@the21stcenturylife`}
+							href={`mailto:${emailAddress}`}
 							className="text-blue-400"
 						>
-							info@the21stcenturylife
+							{emailAddress}
 						</a>
 					</div>
 					<div>

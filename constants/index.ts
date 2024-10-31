@@ -1,3 +1,5 @@
+import { MapPinned, MessagesSquare, Phone } from "lucide-react";
+
 export const navLinks = [
 	{
 		route: "/",
@@ -50,5 +52,32 @@ export const sessions = [
 	{
 		name: "Evening session",
 		details: "Evening Session (3PM - 7PM)",
+	},
+];
+
+export const address =
+	"Metropolitan Club, 15 Kofo Abayomi St. Victoria Island, Lagos";
+
+export const emailAddress = "info@the21stcenturylife";
+export const phoneNumber = "+234 081 234 5678";
+
+export const contactDetails = [
+	{
+		icon: MessagesSquare,
+		title: "Chat to us",
+		description: "Our friendly team is here to help.",
+		cta: "info@the21stcenturylife.com",
+	},
+	{
+		icon: MapPinned,
+		title: "Visit us",
+		description: "Come say hello at out office.",
+		cta: address,
+	},
+	{
+		icon: Phone,
+		title: "Call us",
+		description: "Mon-Fri from 8am to 5pm",
+		cta: phoneNumber,
 	},
 ];
