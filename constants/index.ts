@@ -37,3 +37,18 @@ export const whyMasterClass = [
 		image: "/assets/workplace.jpg",
 	},
 ];
+
+export const sessions = [
+	{
+		name: "Both session",
+		details: "Both session (10AM - 7PM)",
+	},
+	{
+		name: "Morning session",
+		details: "Morning Session (10AM - 1PM)",
+	},
+	{
+		name: "Evening session",
+		details: "Evening Session (3PM - 7PM)",
+	},
+];

@@ -6,7 +6,7 @@ const Footer = () => {
 	return (
 		<div className="py-8">
 			<div className="container">
-				<div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-4 pb-8">
+				<div className="flex flex-col md:flex-row items-center text-center md:text-left justify-between gap-8 md:gap-4 pb-8">
 					<h3 className="font-semibold text-sm">
 						Metropolitan Club, 15 Kofo Abayomi St. Victoria Island,
 						Lagos
