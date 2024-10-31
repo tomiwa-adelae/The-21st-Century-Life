@@ -95,7 +95,7 @@ const page = () => {
 					<div className="relative h-[40vh] lg:h-full ">
 						<BackgroundLines className="flex items-center h-full justify-center px-4">
 							<h2
-								className={`${architectsDaughter.className} text-4xl lg:text-5xl leading-normal text-blue-400 uppercase`}
+								className={`${architectsDaughter.className} text-4xl lg:text-5xl leading-normal text-blue-400 uppercase text-center`}
 							>
 								Adapt. Innovate. Lead
 							</h2>
