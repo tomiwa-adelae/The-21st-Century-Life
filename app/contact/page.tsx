@@ -4,6 +4,7 @@ import { contactDetails } from "@/constants";
 import React from "react";
 import { Architects_Daughter } from "next/font/google";
 import { ContactForm } from "@/components/ContactForm";
+import Footer from "@/components/shared/Footer";
 
 const architectsDaughter = Architects_Daughter({
 	subsets: ["latin"],
@@ -61,6 +62,10 @@ const page = () => {
 					<ContactForm />
 				</div>
 			</div>
+			<div className="container">
+				<Separator />
+			</div>
+			<Footer />
 		</div>
 	);
 };

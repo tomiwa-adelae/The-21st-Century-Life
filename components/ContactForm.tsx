@@ -17,23 +17,44 @@ import {
 import { Input } from "@/components/ui/input";
 import { toast } from "@/hooks/use-toast";
 import { Textarea } from "@/components/ui/textarea";
+import { useState } from "react";
+import PhoneInput from "react-phone-number-input";
+import { cn } from "@/lib/utils";
 
 const FormSchema = z.object({
 	firstName: z.string().min(2, {
-		message: "FirstName must be at least 2 characters.",
+		message: "First name must be at least 2 characters.",
 	}),
+	lastName: z.string().min(2, {
+		message: "Last name must be at least 2 characters.",
+	}),
+	email: z
+		.string()
+		.email()
+		.min(2, { message: "Email address must be at least 2 characters." }),
 	message: z.string().min(10, {
 		message: "Message must be at least 10 characters.",
 	}),
 });
 
 export function ContactForm() {
+	const [phoneNumber, setPhoneNumber] = useState<string | undefined>("");
+	const [error, setError] = useState<string | undefined>("");
+
 	const form = useForm<z.infer<typeof FormSchema>>({
 		resolver: zodResolver(FormSchema),
 		defaultValues: {
 			firstName: "",
+			lastName: "",
+			email: "",
+			message: "",
 		},
 	});
+
+	const handlePhoneNumberChange = (value: string | undefined) => {
+		// Set the phone number, converting undefined to an empty string if necessary
+		setPhoneNumber(value ?? "");
+	};
 
 	function onSubmit(data: z.infer<typeof FormSchema>) {
 		toast({
@@ -53,14 +74,16 @@ export function ContactForm() {
 			<Form {...form}>
 				<form
 					onSubmit={form.handleSubmit(onSubmit)}
-					className="space-y-4"
+					className="space-y-4 text-black"
 				>
 					<FormField
 						control={form.control}
 						name="firstName"
 						render={({ field }) => (
 							<FormItem>
-								<FormLabel>First name</FormLabel>
+								<FormLabel className="text-white">
+									First name
+								</FormLabel>
 								<FormControl>
 									<Input
 										placeholder="Enter your first name"
@@ -76,7 +99,9 @@ export function ContactForm() {
 						name="lastName"
 						render={({ field }) => (
 							<FormItem>
-								<FormLabel>Last name</FormLabel>
+								<FormLabel className="text-white">
+									Last name
+								</FormLabel>
 								<FormControl>
 									<Input
 										placeholder="Enter your last name"
@@ -92,7 +117,9 @@ export function ContactForm() {
 						name="email"
 						render={({ field }) => (
 							<FormItem>
-								<FormLabel>Email</FormLabel>
+								<FormLabel className="text-white">
+									Email
+								</FormLabel>
 								<FormControl>
 									<Input
 										placeholder="Enter your email"
@@ -104,28 +131,37 @@ export function ContactForm() {
 							</FormItem>
 						)}
 					/>
-					<FormField
-						control={form.control}
-						name="phoneNumber"
-						render={({ field }) => (
-							<FormItem>
-								<FormLabel>Phone number</FormLabel>
-								<FormControl>
-									<Input
-										placeholder="Enter your phone number"
-										{...field}
-									/>
-								</FormControl>
-								<FormMessage />
-							</FormItem>
+					<div>
+						<FormLabel
+							className={cn(
+								error && "text-destructive",
+								"text-white"
+							)}
+						>
+							Phone number
+						</FormLabel>
+						<PhoneInput
+							placeholder="Enter your phone number"
+							value={phoneNumber}
+							onChange={handlePhoneNumberChange}
+							defaultCountry="NG"
+							// flagComponent={true}
+							className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-[16px] sm:text-sm  ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 text-black"
+						/>
+						{error && (
+							<p className="text-sm font-medium text-destructive mt-2">
+								{error}
+							</p>
 						)}
-					/>
+					</div>
 					<FormField
 						control={form.control}
 						name="message"
 						render={({ field }) => (
 							<FormItem>
-								<FormLabel>Message</FormLabel>
+								<FormLabel className="text-white">
+									Message
+								</FormLabel>
 								<FormControl>
 									<Textarea
 										placeholder="What do you want to talk about? Let us know"
@@ -137,7 +173,9 @@ export function ContactForm() {
 							</FormItem>
 						)}
 					/>
-					<Button type="submit">Submit</Button>
+					<Button variant={"white"} type="submit">
+						Submit
+					</Button>
 				</form>
 			</Form>
 		</div>

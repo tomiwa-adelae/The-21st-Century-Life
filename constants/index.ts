@@ -13,10 +13,10 @@ export const navLinks = [
 		route: "/contact",
 		label: "Contact",
 	},
-	{
-		route: "/videos",
-		label: "Our videos",
-	},
+	// {
+	// 	route: "/videos",
+	// 	label: "Our videos",
+	// },
 ];
 
 export const whyMasterClass = [
