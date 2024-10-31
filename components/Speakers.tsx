@@ -21,7 +21,7 @@ const Speakers = () => {
 				/>
 				<div>
 					<h2
-						className={`${architectsDaughter.className} text-3xl md:text-4xl leading-normal text-blue-400 uppercase`}
+						className={`${architectsDaughter.className} text-2xl md:text-3xl leading-normal text-blue-400 uppercase`}
 					>
 						Our speaker
 					</h2>

@@ -13,7 +13,7 @@ const Showcase = () => {
 			className="bg-scroll bg-no-repeat bg-cover bg-center h-[95vh] w-screen flex flex-col justify-between"
 			style={{ backgroundImage: `url(/assets/showcase-bg.png)` }}
 		>
-			<Header />
+			<Header text={"white"} />
 			<div className="grid grid-cols-1 lg:grid-cols-3 gap-4 container text-white pb-8">
 				<div className="space-y-3 col-span-2 lg:col-span-2">
 					<h4 className="font-semibold text-sm md:text-lg uppercase text-gray-300">

@@ -4,13 +4,19 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import { AnimatedTooltip } from "../ui/animated-tooltip";
 import { MobileNavbar } from "./MobileNavbar";
+import { cn } from "@/lib/utils";
 
-const Header = () => {
+const Header = ({ text = "black" }: { text?: string }) => {
 	return (
 		<header className="py-4">
-			<div className="container text-white flex items-center justify-between gap-4">
+			<div
+				className={cn(
+					`container flex items-center justify-between gap-4`,
+					text === "black" ? "text-black" : "text-white"
+				)}
+			>
 				<Link href="/">
-					<AnimatedTooltip />
+					<AnimatedTooltip color={text} />
 				</Link>
 				<div className="hidden md:flex items-center justify-center gap-4">
 					<nav className="flex gap-4">

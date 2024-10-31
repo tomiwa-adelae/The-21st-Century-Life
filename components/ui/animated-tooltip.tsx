@@ -11,8 +11,10 @@ import {
 
 export const AnimatedTooltip = ({
 	image = "/assets/logo.png",
+	color = "black",
 }: {
 	image?: string;
+	color?: string;
 }) => {
 	const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 	const springConfig = { stiffness: 100, damping: 5 };
@@ -70,7 +72,7 @@ export const AnimatedTooltip = ({
 					)}
 				</AnimatePresence>
 				<Image
-					src={image}
+					src={color === "black" ? "/assets/logo-black.png" : image}
 					alt={"The 21st Century Life logo"}
 					width={170}
 					height={170}

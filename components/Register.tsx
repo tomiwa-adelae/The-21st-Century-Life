@@ -14,7 +14,7 @@ const Register = () => {
 				<div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
 					<div className="col-span-2">
 						<h3
-							className={`${architectsDaughter.className} text-3xl md:text-4xl leading-normal text-blue-400 uppercase`}
+							className={`${architectsDaughter.className} text-2xl md:text-3xl leading-normal text-blue-400 uppercase`}
 						>
 							Stay ahead of the curve!
 						</h3>
