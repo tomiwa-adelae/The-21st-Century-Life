@@ -78,10 +78,18 @@ const LearningObjectives = () => {
 		{
 			title: "Duration?",
 			content: (
-				<div className="text-xs md:text-sm">
+				<div className="grid text-xs md:text-sm gap-4">
 					<p>
 						<Check className="w-4 h-4 inline mr-2" /> 2 hours per
 						session
+					</p>
+					<p>
+						<Check className="w-4 h-4 inline mr-2" /> Morning
+						session: 10am - 1pm
+					</p>
+					<p>
+						<Check className="w-4 h-4 inline mr-2" /> Evening
+						session: 3pm - 7pm
 					</p>
 				</div>
 			),

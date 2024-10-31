@@ -1,4 +1,5 @@
 import LearningObjectives from "@/components/LearningObjectives";
+import Register from "@/components/Register";
 import Footer from "@/components/shared/Footer";
 import Showcase from "@/components/Showcase";
 import Speakers from "@/components/Speakers";
@@ -17,6 +18,10 @@ export default function Home() {
 				<Separator />
 			</div>
 			<Speakers />
+			<div className="container">
+				<Separator />
+			</div>
+			<Register />
 			<div className="container">
 				<Separator />
 			</div>
