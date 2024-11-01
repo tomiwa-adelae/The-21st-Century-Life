@@ -19,7 +19,7 @@ import { toast } from "@/hooks/use-toast";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import PhoneInput from "react-phone-number-input";
-import { cn } from "@/lib/utils";
+import "react-phone-number-input/style.css";
 
 const FormSchema = z.object({
 	firstName: z.string().min(2, {
@@ -132,12 +132,7 @@ export function ContactForm() {
 						)}
 					/>
 					<div>
-						<FormLabel
-							className={cn(
-								error && "text-destructive",
-								"text-white"
-							)}
-						>
+						<FormLabel className="text-white">
 							Phone number
 						</FormLabel>
 						<PhoneInput

@@ -5,6 +5,7 @@ import Showcase from "@/components/Showcase";
 import Speakers from "@/components/Speakers";
 import { Separator } from "@/components/ui/separator";
 import Why from "@/components/Why";
+import Image from "next/image";
 export default function Home() {
 	return (
 		<div>
@@ -21,6 +22,13 @@ export default function Home() {
 			<div className="container">
 				<Separator />
 			</div>
+			<Image
+				src={"/assets/register-bg.png"}
+				alt={"Banner"}
+				width={1000}
+				height={1000}
+				className="w-full h-auto"
+			/>
 			<Register />
 			<div className="container">
 				<Separator />

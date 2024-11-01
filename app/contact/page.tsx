@@ -5,6 +5,7 @@ import React from "react";
 import { Architects_Daughter } from "next/font/google";
 import { ContactForm } from "@/components/ContactForm";
 import Footer from "@/components/shared/Footer";
+import { Phone } from "lucide-react";
 
 const architectsDaughter = Architects_Daughter({
 	subsets: ["latin"],
@@ -39,13 +40,47 @@ const page = () => {
 										<p className="text-[13px] text-gray-700 mt-1">
 											{details.description}
 										</p>
-										<p className="text-[13px] font-semibold mt-2">
-											{details.cta}
-										</p>
+										{details.type === "email" ? (
+											<a href={`mailto:${details.cta}`}>
+												<p className="text-[13px] font-semibold mt-2">
+													{details.cta}
+												</p>
+											</a>
+										) : (
+											<p className="text-[13px] font-semibold mt-2">
+												{details.cta}
+											</p>
+										)}
 									</div>
 								</div>
 							);
 						})}
+						<div
+							className="flex items-start gap-3"
+							data-aos="fade-right"
+						>
+							<div className="p-2 rounded-md border inline-block">
+								<Phone className="w-4 h-4" />
+							</div>
+							<div>
+								<h3 className="font-semibold text-base uppercase">
+									Call us
+								</h3>
+								<p className="text-[13px] text-gray-700 mt-1">
+									Mon-Fri from 8am to 5pm
+								</p>
+								<a href="tel:0705 863 8527">
+									<p className="text-[13px] font-semibold mt-2">
+										Timi - 0705 863 8527
+									</p>
+								</a>
+								<a href="tel:0807 201 9008">
+									<p className="text-[13px] font-semibold mt-2">
+										Toba - 0807 201 9008
+									</p>
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div className="col-span-2 bg-blue-400 py-8 px-4 lg:px-8 rounded-lg text-white">

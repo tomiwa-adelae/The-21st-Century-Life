@@ -69,7 +69,9 @@ const Speakers = () => {
 						data-aos-duration="2000"
 						asChild
 					>
-						<Link href="/">Learn more about Adedapo</Link>
+						<Link href="/about/#faculty">
+							Learn more about Adedapo
+						</Link>
 					</Button>
 				</div>
 			</div>

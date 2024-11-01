@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
 import { AOSProvider } from "@/components/shared/AOSProvider";
+import { Toaster } from "@/components/ui/toaster";
 
 const montserrat = Montserrat({
 	subsets: ["latin"],
@@ -45,6 +46,7 @@ export default function RootLayout({
 			>
 				{children}
 				<AOSProvider />
+				<Toaster />
 			</body>
 		</html>
 	);

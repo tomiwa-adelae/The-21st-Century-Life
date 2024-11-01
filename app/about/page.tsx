@@ -135,10 +135,13 @@ const page = () => {
 						</p>
 					</div>
 				</div>
-				<div className="my-8">
+				<div className="my-8" id="faculty">
 					<Separator />
 				</div>
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+				<div
+					className="grid grid-cols-1 md:grid-cols-2 gap-8"
+					id="faculty"
+				>
 					<div className="order-last md:order-first">
 						<h2
 							className={`${architectsDaughter.className} text-2xl md:text-3xl leading-normal text-blue-400 uppercase`}

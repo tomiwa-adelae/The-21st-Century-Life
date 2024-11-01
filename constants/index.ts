@@ -58,7 +58,7 @@ export const sessions = [
 export const address =
 	"Metropolitan Club, 15 Kofo Abayomi St. Victoria Island, Lagos";
 
-export const emailAddress = "info@the21stcenturylife";
+export const emailAddress = "21stcenturyliving1@gmail.com";
 export const phoneNumber = "+234 081 234 5678";
 
 export const contactDetails = [
@@ -66,18 +66,7 @@ export const contactDetails = [
 		icon: MessagesSquare,
 		title: "Chat to us",
 		description: "Our friendly team is here to help.",
-		cta: "info@the21stcenturylife.com",
-	},
-	{
-		icon: MapPinned,
-		title: "Visit us",
-		description: "Come say hello at out office.",
-		cta: address,
-	},
-	{
-		icon: Phone,
-		title: "Call us",
-		description: "Mon-Fri from 8am to 5pm",
-		cta: phoneNumber,
+		cta: emailAddress,
+		type: "email",
 	},
 ];

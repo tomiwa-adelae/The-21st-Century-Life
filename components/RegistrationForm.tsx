@@ -2,7 +2,7 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { z } from "zod";
+import { date, z } from "zod";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -29,6 +29,7 @@ import { useState } from "react";
 import { sessions } from "@/constants";
 import { cn } from "@/lib/utils";
 import { Checkbox } from "@/components/ui/checkbox";
+import { registerUser } from "@/lib/actions/user.actions";
 
 const FormSchema = z.object({
 	firstName: z.string().min(2, {
@@ -48,8 +49,9 @@ const FormSchema = z.object({
 });
 
 export function RegistrationForm() {
-	const [phoneNumber, setPhoneNumber] = useState<string | undefined>("");
+	const [phoneNumber, setPhoneNumber] = useState<string>("");
 	const [error, setError] = useState<string | undefined>("");
+	const [termsError, setTermsError] = useState<string | undefined>("");
 
 	const form = useForm<z.infer<typeof FormSchema>>({
 		resolver: zodResolver(FormSchema),
@@ -60,7 +62,6 @@ export function RegistrationForm() {
 			company: "",
 			jobTitle: "",
 			preferredSession: "",
-			termsAndConditions: false,
 		},
 	});
 
@@ -69,17 +70,37 @@ export function RegistrationForm() {
 		setPhoneNumber(value ?? "");
 	};
 
-	function onSubmit(data: z.infer<typeof FormSchema>) {
-		toast({
-			title: "You submitted the following values:",
-			description: (
-				<pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-					<code className="text-white">
-						{JSON.stringify(data, null, 2)}
-					</code>
-				</pre>
-			),
-		});
+	async function onSubmit(data: z.infer<typeof FormSchema>) {
+		try {
+			const user = {
+				firstName: data.firstName,
+				lastName: data.lastName,
+				email: data.email,
+				company: data.company,
+				jobTitle: data.jobTitle,
+				preferredSession: data.preferredSession,
+				phoneNumber,
+			};
+			const res = await registerUser({ user });
+
+			if (res?.status == 400)
+				return toast({
+					title: "Error!",
+					description: res?.message,
+					variant: "destructive",
+				});
+
+			toast({
+				title: "Successful registration",
+				description:
+					"Thank you for registering! Your registration for the Business Masterclass has been received. You will receive a confirmation email within 24 hours with further details and your registration number.",
+			});
+		} catch (error) {
+			toast({
+				title: "Error",
+				description: "Registration failed. Please try again later.",
+			});
+		}
 	}
 
 	return (
@@ -248,9 +269,12 @@ export function RegistrationForm() {
 							if (!phoneNumber)
 								setError("Phone number must be included.");
 						}}
+						disabled={form.formState.isSubmitting}
 						type="submit"
 					>
-						Submit
+						{form.formState.isSubmitting
+							? "Submitting..."
+							: "Submit"}
 					</Button>
 				</form>
 			</Form>

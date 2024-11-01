@@ -39,7 +39,7 @@ const Register = () => {
 							data-aos="fade-left"
 						>
 							<Link href="/register">
-								Pre-register for Business Masterclass
+								Register for Business Masterclass
 							</Link>
 						</Button>
 					</div>
