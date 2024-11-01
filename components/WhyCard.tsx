@@ -15,7 +15,7 @@ export function WhyCard({
 		<div className="w-full md:max-w-sm group/card">
 			<div
 				className={cn(
-					" cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-xl w-full md:max-w-sm mx-auto backgroundImage flex flex-col justify-end p-4",
+					" cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-xl w-full md:max-w-sm mx-auto backgroundImage flex flex-col justify-end p-4 transition hover:translate-y-2",
 					"bg-cover"
 				)}
 				style={{ backgroundImage: `url(${image})` }}

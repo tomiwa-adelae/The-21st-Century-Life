@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
+import { AOSProvider } from "@/components/shared/AOSProvider";
 
 const montserrat = Montserrat({
 	subsets: ["latin"],
@@ -43,6 +44,7 @@ export default function RootLayout({
 				className={`${montserrat.className} antialiased overflow-x-hidden`}
 			>
 				{children}
+				<AOSProvider />
 			</body>
 		</html>
 	);

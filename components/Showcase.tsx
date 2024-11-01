@@ -16,22 +16,28 @@ const Showcase = () => {
 			<Header text={"white"} />
 			<div className="grid grid-cols-1 lg:grid-cols-3 gap-4 container text-white pb-8">
 				<div className="space-y-3 col-span-2 lg:col-span-2">
-					<h4 className="font-semibold text-sm md:text-lg uppercase text-gray-300">
+					<h4
+						className="font-semibold text-sm md:text-lg uppercase text-gray-300"
+						data-aos="fade-right"
+						data-aos-duration="1000"
+					>
 						16th of november, 2024
 					</h4>
-					<h1
-						className={`${architectsDaughter.className} text-4xl sm:text-5xl lg:text-6xl uppercase leading-snug md:leading-snug lg:leading-snug`}
-					>
-						Business Sustenance in the New Normal
-					</h1>
-					<p className="text-xs md:text-sm text-gray-200 leading-loose md:leading-loose">
-						Dive into the innovations and breakthroughs that define
-						our times. See how life in the 21st century is evolving,
-						shaping the future of technology, culture, and human
-						experiences.
-					</p>
+					<div data-aos="fade-up" data-aos-duration="2000">
+						<h1
+							className={`${architectsDaughter.className} text-4xl sm:text-5xl lg:text-6xl uppercase leading-snug md:leading-snug lg:leading-snug`}
+						>
+							Business Sustenance in the New Normal
+						</h1>
+						<p className="text-xs md:text-sm text-gray-200 leading-loose md:leading-loose">
+							Dive into the innovations and breakthroughs that
+							define our times. See how life in the 21st century
+							is evolving, shaping the future of technology,
+							culture, and human experiences.
+						</p>
+					</div>
 				</div>
-				<div className="flex items-end w-full">
+				<div data-aos="fade-left" className="flex items-end w-full">
 					<Countdown />
 				</div>
 			</div>

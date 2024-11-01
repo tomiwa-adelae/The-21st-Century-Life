@@ -15,10 +15,15 @@ const Register = () => {
 					<div className="col-span-2">
 						<h3
 							className={`${architectsDaughter.className} text-2xl md:text-3xl leading-normal text-blue-400 uppercase`}
+							data-aos="fade-up"
 						>
 							Stay ahead of the curve!
 						</h3>
-						<p className="text-sm text-gray-700  leading-8 mt-4">
+						<p
+							className="text-sm text-gray-700  leading-8 mt-4"
+							data-aos="fade-up"
+							data-aos-duration="2000"
+						>
 							Sign up now to secure your spot at the upcoming
 							Business Masterclass. Pre-registering ensures you’ll
 							receive early access to event updates, exclusive
@@ -31,6 +36,7 @@ const Register = () => {
 							className="hover:bg-blue-400 hover:text-white"
 							variant={"outline"}
 							asChild
+							data-aos="fade-left"
 						>
 							<Link href="/register">
 								Pre-register for Business Masterclass

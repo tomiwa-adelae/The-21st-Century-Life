@@ -70,7 +70,7 @@ export function ContactForm() {
 	}
 
 	return (
-		<div className="mt-4">
+		<div className="mt-4" data-aos="fade-left" data-aos-duration="3000">
 			<Form {...form}>
 				<form
 					onSubmit={form.handleSubmit(onSubmit)}

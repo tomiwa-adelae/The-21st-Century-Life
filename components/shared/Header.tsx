@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 
 const Header = ({ text = "black" }: { text?: string }) => {
 	return (
-		<header className="py-4">
+		<header data-aos="fade-down" className="py-4">
 			<div
 				className={cn(
 					`container flex items-center justify-between gap-4`,

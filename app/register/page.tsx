@@ -19,10 +19,15 @@ const page = () => {
 			<div className="container py-8">
 				<h1
 					className={`${architectsDaughter.className} text-3xl sm:text-4xl lg:text-5xl uppercase leading-snug md:leading-snug lg:leading-snug text-blue-400`}
+					data-aos="fade-up"
 				>
 					Join the Business Masterclass
 				</h1>
-				<p className="text-sm leading-8 mt-2">
+				<p
+					className="text-sm leading-8 mt-2"
+					data-aos="fade-up"
+					data-aos-duration="2000"
+				>
 					Secure your spot for the upcoming masterclass designed for
 					entrepreneurs, business owners, and professionals ready to
 					thrive in today’s business landscape.

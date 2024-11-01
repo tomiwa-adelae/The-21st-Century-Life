@@ -12,20 +12,28 @@ const Speakers = () => {
 	return (
 		<div className="bg-white py-12">
 			<div className="container grid grid-cols-1 md:grid-cols-2 gap-8">
-				<Image
-					src={"/assets/dapo-adelegan.jpg"}
-					alt="Prince Dapo Adelegan"
-					width={1000}
-					height={1000}
-					className="aspect-square object-cover rounded-md"
-				/>
+				<div className="transition hover:translate-y-2">
+					<Image
+						src={"/assets/dapo-adelegan.jpg"}
+						alt="Prince Dapo Adelegan"
+						width={1000}
+						height={1000}
+						className="aspect-square object-cover rounded-md"
+						data-aos="fade-up"
+					/>
+				</div>
 				<div>
 					<h2
 						className={`${architectsDaughter.className} text-2xl md:text-3xl leading-normal text-blue-400 uppercase`}
+						data-aos="fade-left"
 					>
 						Our speaker
 					</h2>
-					<div className="text-sm space-y-3 leading-8 mt-4">
+					<div
+						className="text-sm space-y-3 leading-8 mt-4"
+						data-aos="fade-left"
+						data-aos-duration="2000"
+					>
 						<p>
 							Born in Lagos on April 20, 1962,{" "}
 							<span className="text-blue-400 font-semibold">
@@ -57,6 +65,8 @@ const Speakers = () => {
 					<Button
 						variant={"outline"}
 						className="mt-6 hover:bg-blue-400 hover:text-white"
+						data-aos="fade-left"
+						data-aos-duration="2000"
 						asChild
 					>
 						<Link href="/">Learn more about Adedapo</Link>

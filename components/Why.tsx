@@ -16,10 +16,14 @@ const Why = () => {
 			<div className="container">
 				<h2
 					className={`${architectsDaughter.className} text-2xl md:text-3xl leading-normal text-blue-400 uppercase text-center`}
+					data-aos="fade-up"
 				>
 					Why Business Masterclass?
 				</h2>
-				<p className="text-sm text-center leading-8 mt-4">
+				<p
+					className="text-sm text-center leading-8 mt-4"
+					data-aos="fade-up"
+				>
 					In today's rapidly evolving business landscape,
 					sustainability is no longer a nicety, but a necessity. The
 					COVID-19 pandemic and technology advances in the last decade
@@ -30,7 +34,11 @@ const Why = () => {
 					required to navigate this new reality and ensure their
 					organizations thrive.
 				</p>
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+				<div
+					className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6"
+					data-aos="fade-up"
+					data-aos-duration="2000"
+				>
 					{whyMasterClass.map((why, index) => (
 						<WhyCard
 							key={index}

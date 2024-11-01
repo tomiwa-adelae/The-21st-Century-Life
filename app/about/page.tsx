@@ -28,10 +28,15 @@ const page = () => {
 			<div className="container py-8">
 				<h1
 					className={`${architectsDaughter.className} text-4xl sm:text-5xl lg:text-6xl uppercase leading-snug md:leading-snug lg:leading-snug text-blue-400`}
+					data-aos="fade-up"
 				>
 					About
 				</h1>
-				<p className="text-sm leading-8 mt-2">
+				<p
+					className="text-sm leading-8 mt-2"
+					data-aos="fade-up"
+					data-aos-duration="2000"
+				>
 					The Business Masterclass is a full-day event dedicated to
 					high-impact learning and networking. Guided by renowned
 					industry leaders and thought leaders, attendees will gain
@@ -45,16 +50,25 @@ const page = () => {
 				</div>
 				<h2
 					className={`${architectsDaughter.className} text-2xl md:text-3xl leading-normal text-blue-400 uppercase`}
+					data-aos="fade-up"
 				>
 					Who should attend?
 				</h2>
-				<p className="text-sm leading-8 mt-4">
+				<p
+					className="text-sm leading-8 mt-4"
+					data-aos="fade-up"
+					data-aos-duration="2000"
+				>
 					Whether you’re a seasoned professional or just starting in
 					the world of business, this event will provide practical
 					tools and strategic insights to thrive. This class is ideal
 					for:
 				</p>
-				<ul className="space-y-4 text-sm mt-4">
+				<ul
+					className="space-y-4 text-sm mt-4"
+					data-aos="fade-up"
+					data-aos-duration="2000"
+				>
 					<li>
 						<Check className="w-4 h-4 inline mr-2 text-blue-400" />
 						<p className="text-blue-400 font-semibold inline-block">
@@ -92,7 +106,10 @@ const page = () => {
 					<Separator />
 				</div>
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-					<div className="relative h-[40vh] lg:h-full ">
+					<div
+						className="relative h-[40vh] lg:h-full"
+						data-aos="fade-right"
+					>
 						<BackgroundLines className="flex items-center h-full justify-center px-4">
 							<h2
 								className={`${architectsDaughter.className} text-4xl lg:text-5xl leading-normal text-blue-400 uppercase text-center`}
@@ -101,7 +118,7 @@ const page = () => {
 							</h2>
 						</BackgroundLines>
 					</div>
-					<div>
+					<div data-aos="fade-left">
 						<h2
 							className={`${architectsDaughter.className} text-2xl md:text-3xl leading-normal text-blue-400 uppercase`}
 						>
@@ -125,15 +142,22 @@ const page = () => {
 					<div className="order-last md:order-first">
 						<h2
 							className={`${architectsDaughter.className} text-2xl md:text-3xl leading-normal text-blue-400 uppercase`}
+							data-aos="fade-left"
 						>
 							Meet the Faculty
 						</h2>
 						<h3
 							className={`text-lg font-semibold leading-normal text-blue-400 uppercase mt-4`}
+							data-aos="fade-left"
+							data-aos-duration="2000"
 						>
 							Prince Dapo Adelegan, F.CIOD
 						</h3>
-						<div className="text-sm space-y-3 leading-8 mt-4">
+						<div
+							className="text-sm space-y-3 leading-8 mt-4"
+							data-aos="fade-up"
+							data-aos-duration="2000"
+						>
 							<p>
 								Born in Lagos on April 20, 1962,{" "}
 								<span className="text-blue-400 font-semibold">
@@ -225,13 +249,16 @@ const page = () => {
 							</p>
 						</div>
 					</div>
-					<Image
-						src={"/assets/dapo-adelegan.jpg"}
-						alt="Prince Dapo Adelegan"
-						width={1000}
-						height={1000}
-						className="aspect-square object-cover rounded-md"
-					/>
+					<div className="transition hover:translate-y-2">
+						<Image
+							src={"/assets/dapo-adelegan.jpg"}
+							alt="Prince Dapo Adelegan"
+							width={1000}
+							height={1000}
+							className="aspect-square object-cover rounded-md"
+							data-aos="fade-up"
+						/>
+					</div>
 				</div>
 				<div className="my-8">
 					<Separator />
@@ -240,10 +267,15 @@ const page = () => {
 					<div className="col-span-2">
 						<h2
 							className={`${architectsDaughter.className} text-2xl md:text-3xl leading-normal text-blue-400 uppercase`}
+							data-aos="fade-up"
 						>
 							Join us now
 						</h2>
-						<p className="text-sm leading-8 mt-4">
+						<p
+							className="text-sm leading-8 mt-4"
+							data-aos="fade-up"
+							data-aos-duration="2000"
+						>
 							Prepare yourself to lead, adapt, and thrive in the
 							21st century. Sign up for the Business Masterclass
 							today and start your journey to sustainable success.
@@ -254,6 +286,7 @@ const page = () => {
 							className="hover:bg-blue-400 hover:text-white"
 							variant={"outline"}
 							asChild
+							data-aos="fade-left"
 						>
 							<Link href="/register">
 								Pre-register for Business Masterclass

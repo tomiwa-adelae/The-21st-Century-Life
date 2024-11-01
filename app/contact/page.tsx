@@ -27,6 +27,7 @@ const page = () => {
 								<div
 									key={index}
 									className="flex items-start gap-3"
+									data-aos="fade-right"
 								>
 									<div className="p-2 rounded-md border inline-block">
 										<Icon className="w-4 h-4" />
@@ -50,10 +51,15 @@ const page = () => {
 				<div className="col-span-2 bg-blue-400 py-8 px-4 lg:px-8 rounded-lg text-white">
 					<h1
 						className={`${architectsDaughter.className} text-2xl md:text-3xl lg:text-4xl uppercase leading-snug md:leading-snug lg:leading-snug`}
+						data-aos="fade-up"
 					>
 						Got ideas? Get in touch
 					</h1>
-					<p className="text-sm leading-8 mt-2">
+					<p
+						className="text-sm leading-8 mt-2"
+						data-aos="fade-up"
+						data-aos-duration="2000"
+					>
 						We’re here to answer any questions about the Business
 						Masterclass, registration details, or general inquiries.
 						Feel free to reach out to us using the contact details
