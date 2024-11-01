@@ -22,13 +22,15 @@ export default function Home() {
 			<div className="container">
 				<Separator />
 			</div>
-			<Image
-				src={"/assets/register-bg.png"}
-				alt={"Banner"}
-				width={1000}
-				height={1000}
-				className="w-full h-auto"
-			/>
+			<div className="w-screen">
+				<Image
+					src={"/assets/register-bg.png"}
+					alt={"Banner"}
+					width={1000}
+					height={1000}
+					className="w-full h-auto"
+				/>
+			</div>
 			<Register />
 			<div className="container">
 				<Separator />

@@ -75,3 +75,8 @@ body {
 .PhoneInputInput {
 	outline: none;
 }
+
+body,
+html {
+	overflow-x: hidden;
+}
