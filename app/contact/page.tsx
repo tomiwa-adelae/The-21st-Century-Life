@@ -6,6 +6,13 @@ import { Architects_Daughter } from "next/font/google";
 import { ContactForm } from "@/components/ContactForm";
 import Footer from "@/components/shared/Footer";
 import { Phone } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Contact | The 21st Century Life",
+	description:
+		"Reach out to the Business Masterclass team with any questions or inquiries. We’re here to help you with your registration, event details, and more.",
+};
 
 const architectsDaughter = Architects_Daughter({
 	subsets: ["latin"],

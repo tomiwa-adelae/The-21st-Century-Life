@@ -8,6 +8,13 @@ import { Check } from "lucide-react";
 import { Architects_Daughter } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "About | The 21st Century Life",
+	description:
+		"Discover the mission and vision behind Business Masterclass. We’re dedicated to providing quality education and mentorship for business professionals at every level.",
+};
 
 const architectsDaughter = Architects_Daughter({
 	subsets: ["latin"],
@@ -292,7 +299,7 @@ const page = () => {
 							data-aos="fade-left"
 						>
 							<Link href="/register">
-								Pre-register for Business Masterclass
+								Register for Business Masterclass
 							</Link>
 						</Button>
 					</div>

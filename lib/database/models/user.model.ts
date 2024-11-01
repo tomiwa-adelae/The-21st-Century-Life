@@ -8,6 +8,7 @@ export interface IUser {
 	company?: string;
 	jobTitle?: string;
 	preferredSession?: string;
+	attendanceType?: string;
 }
 
 const UserSchema = new Schema({
@@ -35,6 +36,9 @@ const UserSchema = new Schema({
 		type: String,
 	},
 	preferredSession: {
+		type: String,
+	},
+	attendanceType: {
 		type: String,
 	},
 });

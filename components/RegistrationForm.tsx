@@ -26,7 +26,7 @@ import { toast } from "@/hooks/use-toast";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 import { useState } from "react";
-import { sessions } from "@/constants";
+import { attendanceTypes, sessions } from "@/constants";
 import { cn } from "@/lib/utils";
 import { Checkbox } from "@/components/ui/checkbox";
 import { registerUser } from "@/lib/actions/user.actions";
@@ -41,6 +41,7 @@ const FormSchema = z.object({
 	company: z.string().optional(),
 	jobTitle: z.string().optional(),
 	preferredSession: z.string().optional(),
+	attendanceType: z.string(),
 	email: z
 		.string()
 		.email()
@@ -51,7 +52,6 @@ const FormSchema = z.object({
 export function RegistrationForm() {
 	const [phoneNumber, setPhoneNumber] = useState<string>("");
 	const [error, setError] = useState<string | undefined>("");
-	const [termsError, setTermsError] = useState<string | undefined>("");
 
 	const form = useForm<z.infer<typeof FormSchema>>({
 		resolver: zodResolver(FormSchema),
@@ -62,6 +62,7 @@ export function RegistrationForm() {
 			company: "",
 			jobTitle: "",
 			preferredSession: "",
+			attendanceType: "",
 		},
 	});
 
@@ -79,6 +80,7 @@ export function RegistrationForm() {
 				company: data.company,
 				jobTitle: data.jobTitle,
 				preferredSession: data.preferredSession,
+				attendanceType: data.attendanceType,
 				phoneNumber,
 			};
 			const res = await registerUser({ user });
@@ -217,36 +219,70 @@ export function RegistrationForm() {
 							)}
 						/>
 					</div>
-					<FormField
-						control={form.control}
-						name="preferredSession"
-						render={({ field }) => (
-							<FormItem>
-								<FormLabel>Preferred session</FormLabel>
-								<Select
-									onValueChange={field.onChange}
-									defaultValue={field.value}
-								>
-									<FormControl>
-										<SelectTrigger>
-											<SelectValue placeholder="Select a preferred session" />
-										</SelectTrigger>
-									</FormControl>
-									<SelectContent>
-										{sessions.map((session, index) => (
-											<SelectItem
-												key={index}
-												value={session.name}
-											>
-												{session.details}
-											</SelectItem>
-										))}
-									</SelectContent>
-								</Select>
-								<FormMessage />
-							</FormItem>
-						)}
-					/>
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+						<FormField
+							control={form.control}
+							name="preferredSession"
+							render={({ field }) => (
+								<FormItem>
+									<FormLabel>Preferred session</FormLabel>
+									<Select
+										onValueChange={field.onChange}
+										defaultValue={field.value}
+									>
+										<FormControl>
+											<SelectTrigger>
+												<SelectValue placeholder="Select a preferred session" />
+											</SelectTrigger>
+										</FormControl>
+										<SelectContent>
+											{sessions.map((session, index) => (
+												<SelectItem
+													key={index}
+													value={session.name}
+												>
+													{session.details}
+												</SelectItem>
+											))}
+										</SelectContent>
+									</Select>
+									<FormMessage />
+								</FormItem>
+							)}
+						/>
+						<FormField
+							control={form.control}
+							name="attendanceType"
+							render={({ field }) => (
+								<FormItem>
+									<FormLabel>Attendance type *</FormLabel>
+									<Select
+										onValueChange={field.onChange}
+										defaultValue={field.value}
+									>
+										<FormControl>
+											<SelectTrigger>
+												<SelectValue placeholder="Select a attendance type" />
+											</SelectTrigger>
+										</FormControl>
+										<SelectContent>
+											{attendanceTypes.map(
+												(type, index) => (
+													<SelectItem
+														key={index}
+														value={type.name}
+													>
+														{type.details}
+													</SelectItem>
+												)
+											)}
+										</SelectContent>
+									</Select>
+									<FormMessage />
+								</FormItem>
+							)}
+						/>
+					</div>
 					<FormField
 						control={form.control}
 						name="termsAndConditions"

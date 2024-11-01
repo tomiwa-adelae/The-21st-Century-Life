@@ -13,10 +13,10 @@ export const navLinks = [
 		route: "/contact",
 		label: "Contact",
 	},
-	// {
-	// 	route: "/videos",
-	// 	label: "Our videos",
-	// },
+	{
+		route: "/videos",
+		label: "Our videos",
+	},
 ];
 
 export const whyMasterClass = [
@@ -55,6 +55,17 @@ export const sessions = [
 	},
 ];
 
+export const attendanceTypes = [
+	{
+		name: "Physical attendance",
+		details: "Physical attendance (Metropolitan Club, Lagos)",
+	},
+	{
+		name: "Virtual Attendance",
+		details: "Virtual Attendance (Online Link)",
+	},
+];
+
 export const address =
 	"Metropolitan Club, 15 Kofo Abayomi St. Victoria Island, Lagos";
 
@@ -69,4 +80,10 @@ export const contactDetails = [
 		cta: emailAddress,
 		type: "email",
 	},
+];
+
+export const videoLists = [
+	"/assets/videos/video-one.mp4",
+	"/assets/videos/video-two.mp4",
+	"/assets/videos/video-three.mp4",
 ];

@@ -4,6 +4,14 @@ import Header from "@/components/shared/Header";
 import { Separator } from "@/components/ui/separator";
 import { Architects_Daughter } from "next/font/google";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Register | The 21st Century Life",
+	description:
+		"Reserve your place in our Business Masterclass event. Choose between virtual and in-person attendance to gain actionable business insights and connect with professionals.",
+};
+
 const architectsDaughter = Architects_Daughter({
 	subsets: ["latin"],
 	weight: ["400"],

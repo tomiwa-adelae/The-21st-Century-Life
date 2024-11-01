@@ -21,6 +21,7 @@ export const registerUser = async ({
 		company?: string;
 		jobTitle?: string;
 		preferredSession?: string;
+		attendanceType?: string;
 	};
 }) => {
 	try {

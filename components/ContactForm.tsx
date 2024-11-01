@@ -20,6 +20,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
+import ReactPlayer from "react-player";
 
 const FormSchema = z.object({
 	firstName: z.string().min(2, {
@@ -71,7 +72,7 @@ export function ContactForm() {
 
 	return (
 		<div className="mt-4" data-aos="fade-left" data-aos-duration="3000">
-			<Form {...form}>
+			{/* <Form {...form}>
 				<form
 					onSubmit={form.handleSubmit(onSubmit)}
 					className="space-y-4 text-black"
@@ -179,7 +180,7 @@ export function ContactForm() {
 						Submit
 					</Button>
 				</form>
-			</Form>
+			</Form> */}
 		</div>
 	);
 }
