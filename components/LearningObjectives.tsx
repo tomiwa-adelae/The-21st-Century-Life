@@ -4,6 +4,8 @@ import Image from "next/image";
 import { Check, Copy } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 import { address } from "@/constants";
+import { Button } from "./ui/button";
+import Link from "next/link";
 
 const LearningObjectives = async () => {
 	const copyTextToClipboard = async ({ text }: { text: any }) => {
@@ -209,6 +211,21 @@ const LearningObjectives = async () => {
 					<p>
 						<Check className="w-4 h-4 inline mr-2" /> Interactive
 					</p>
+				</div>
+			),
+		},
+		{
+			title: "Interested?",
+			content: (
+				<div className="grid text-xs md:text-sm gap-4">
+					<p>
+						Secure your spot for the upcoming masterclass designed
+						for entrepreneurs, business owners, and professionals
+						ready to thrive in today’s business landscape.
+					</p>
+					<Button asChild className="w-full mt-4">
+						<Link href="/register">Register now</Link>
+					</Button>
 				</div>
 			),
 		},

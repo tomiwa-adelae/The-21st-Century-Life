@@ -106,11 +106,7 @@ export function RegistrationForm() {
 	}
 
 	return (
-		<div
-			className="container"
-			data-aos="fade-left"
-			data-aos-duration="3000"
-		>
+		<div className="container" data-aos="fade-up" data-aos-duration="3000">
 			<Form {...form}>
 				<form
 					onSubmit={form.handleSubmit(onSubmit)}

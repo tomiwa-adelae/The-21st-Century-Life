@@ -55,7 +55,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 							</div>
 							<h3
 								className={`hidden md:block md:pl-20 md:text-3xl font-semibold text-blue-400 dark:text-blue-400 ${architectsDaughter.className}`}
-								data-aos="fade-right"
+								data-aos="fade-up"
 							>
 								{item.title}
 							</h3>
@@ -63,7 +63,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
 						<div
 							className="relative pl-20 pr-4 md:pl-4 w-full"
-							data-aos="fade-left"
+							data-aos="fade-up"
 							data-aos-duration="2000"
 						>
 							<h3

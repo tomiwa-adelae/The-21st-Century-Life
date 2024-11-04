@@ -115,7 +115,7 @@ const page = () => {
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
 					<div
 						className="relative h-[40vh] lg:h-full"
-						data-aos="fade-right"
+						data-aos="fade-up"
 					>
 						<BackgroundLines className="flex items-center h-full justify-center px-4">
 							<h2
@@ -125,7 +125,7 @@ const page = () => {
 							</h2>
 						</BackgroundLines>
 					</div>
-					<div data-aos="fade-left">
+					<div data-aos="fade-up">
 						<h2
 							className={`${architectsDaughter.className} text-2xl md:text-3xl leading-normal text-blue-400 uppercase`}
 						>
@@ -152,7 +152,7 @@ const page = () => {
 					<div className="order-last md:order-first">
 						<h2
 							className={`${architectsDaughter.className} text-2xl md:text-3xl leading-normal text-blue-400 uppercase`}
-							data-aos="fade-left"
+							data-aos="fade-up"
 						>
 							Meet the Faculty
 						</h2>
@@ -296,7 +296,7 @@ const page = () => {
 							className="hover:bg-blue-400 hover:text-white"
 							variant={"outline"}
 							asChild
-							data-aos="fade-left"
+							data-aos="fade-up"
 						>
 							<Link href="/register">
 								Register for Business Masterclass

@@ -71,8 +71,8 @@ export function ContactForm() {
 	}
 
 	return (
-		<div className="mt-4" data-aos="fade-left" data-aos-duration="3000">
-			{/* <Form {...form}>
+		<div className="mt-4" data-aos="fade-up" data-aos-duration="3000">
+			<Form {...form}>
 				<form
 					onSubmit={form.handleSubmit(onSubmit)}
 					className="space-y-4 text-black"
@@ -180,7 +180,7 @@ export function ContactForm() {
 						Submit
 					</Button>
 				</form>
-			</Form> */}
+			</Form>
 		</div>
 	);
 }

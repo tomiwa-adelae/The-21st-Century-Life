@@ -76,7 +76,7 @@ const page = () => {
 							className="hover:bg-blue-400 hover:text-white"
 							variant={"outline"}
 							asChild
-							data-aos="fade-left"
+							data-aos="fade-up"
 						>
 							<Link href="/register">
 								Register for Business Masterclass

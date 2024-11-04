@@ -10,7 +10,7 @@ const architectsDaughter = Architects_Daughter({
 const Showcase = () => {
 	return (
 		<main
-			className="bg-scroll bg-no-repeat bg-cover bg-center h-[95vh] w-screen flex flex-col justify-between"
+			className="bg-scroll bg-no-repeat bg-cover bg-center h-[80vh] w-screen flex flex-col justify-between"
 			style={{ backgroundImage: `url(/assets/showcase-bg.png)` }}
 		>
 			<Header text={"white"} />
@@ -18,7 +18,7 @@ const Showcase = () => {
 				<div className="space-y-3 col-span-2 lg:col-span-2">
 					<h4
 						className="font-semibold text-sm md:text-lg uppercase text-gray-300"
-						data-aos="fade-right"
+						data-aos="fade-up"
 						data-aos-duration="1000"
 					>
 						16th of november, 2024
@@ -37,7 +37,7 @@ const Showcase = () => {
 						</p>
 					</div>
 				</div>
-				<div data-aos="fade-left" className="flex items-end w-full">
+				<div data-aos="fade-up" className="flex items-end w-full">
 					<Countdown />
 				</div>
 			</div>

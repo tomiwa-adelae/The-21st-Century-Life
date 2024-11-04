@@ -8,7 +8,7 @@ const VideoLibrary = () => {
 			{videoLists.map((video, index) => (
 				<div
 					key={index}
-					data-aos="slide-left"
+					data-aos="fade-up"
 					data-aos-duration={1000 * (1 + index)}
 				>
 					<VideoPlayer url={video} />

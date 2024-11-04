@@ -25,13 +25,13 @@ const Speakers = () => {
 				<div>
 					<h2
 						className={`${architectsDaughter.className} text-2xl md:text-3xl leading-normal text-blue-400 uppercase`}
-						data-aos="fade-left"
+						data-aos="fade-up"
 					>
 						Our speaker
 					</h2>
 					<div
 						className="text-sm space-y-3 leading-8 mt-4"
-						data-aos="fade-left"
+						data-aos="fade-up"
 						data-aos-duration="2000"
 					>
 						<p>
@@ -65,7 +65,7 @@ const Speakers = () => {
 					<Button
 						variant={"outline"}
 						className="mt-6 hover:bg-blue-400 hover:text-white"
-						data-aos="fade-left"
+						data-aos="fade-up"
 						data-aos-duration="2000"
 						asChild
 					>

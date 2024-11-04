@@ -35,7 +35,7 @@ const page = () => {
 								<div
 									key={index}
 									className="flex items-start gap-3"
-									data-aos="fade-right"
+									data-aos="fade-up"
 								>
 									<div className="p-2 rounded-md border inline-block">
 										<Icon className="w-4 h-4" />
@@ -64,7 +64,7 @@ const page = () => {
 						})}
 						<div
 							className="flex items-start gap-3"
-							data-aos="fade-right"
+							data-aos="fade-up"
 						>
 							<div className="p-2 rounded-md border inline-block">
 								<Phone className="w-4 h-4" />
