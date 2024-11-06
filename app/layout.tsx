@@ -45,7 +45,7 @@ export default function RootLayout({
 				className={`${montserrat.className} antialiased overflow-x-hidden`}
 			>
 				{children}
-				<AOSProvider />
+				{/* <AOSProvider /> */}
 				<Toaster />
 			</body>
 		</html>

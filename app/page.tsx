@@ -24,7 +24,7 @@ export default function Home() {
 			</div>
 			<div className="w-screen">
 				<Image
-					src={"/assets/register-bg.png"}
+					src={"/assets/register-bg.svg"}
 					alt={"Banner"}
 					width={1000}
 					height={1000}
