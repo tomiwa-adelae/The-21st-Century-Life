@@ -1,4 +1,4 @@
-import { Facebook, Linkedin, Twitter, Youtube } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 import React from "react";
 import { Separator } from "../ui/separator";
 import { address, emailAddress } from "@/constants";
@@ -26,8 +26,8 @@ const Footer = () => {
 							<a href="">
 								<Twitter className="w-5 h-5 md:w-6 md:h-6 hover:text-blue-400" />
 							</a>
-							<a href="">
-								<Linkedin className="w-5 h-5 md:w-6 md:h-6 hover:text-blue-400" />
+							<a href="https://www.instagram.com/21st_centuryliving?igsh=eWc0bGdsbmp3cnF6">
+								<Instagram className="w-5 h-5 md:w-6 md:h-6 hover:text-blue-400" />
 							</a>
 							<a href="">
 								<Youtube className="w-5 h-5 md:w-6 md:h-6 hover:text-blue-400" />
