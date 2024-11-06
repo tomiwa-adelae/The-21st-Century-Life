@@ -23,7 +23,9 @@ export function MobileNavbar() {
 		<nav className="lg:hidden">
 			<Sheet>
 				<SheetTrigger asChild>
-					<Menu className="cursor-pointer" />
+					<Button size={"icon"} variant={"ghost"}>
+						<Menu className="cursor-pointer" />
+					</Button>
 				</SheetTrigger>
 				<SheetContent>
 					<SheetHeader>
