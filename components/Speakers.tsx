@@ -69,7 +69,7 @@ const Speakers = () => {
 						data-aos-duration="2000"
 						asChild
 					>
-						<Link href="/about/#faculty">
+						<Link href="/prince-adedapo">
 							Learn more about Adedapo
 						</Link>
 					</Button>

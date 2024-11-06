@@ -18,9 +18,7 @@ export default function Home() {
 			<LearningObjectives />
 			<div className="container">
 				<Separator />
-			</div>
-			<Speakers />
-			<div className="container">
+				<Speakers />
 				<Separator />
 			</div>
 			<div className="w-screen">
@@ -32,8 +30,8 @@ export default function Home() {
 					className="w-full h-auto"
 				/>
 			</div>
-			<Register />
 			<div className="container">
+				<Register />
 				<Separator />
 			</div>
 			<Footer />

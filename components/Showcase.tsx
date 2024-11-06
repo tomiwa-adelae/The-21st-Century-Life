@@ -10,7 +10,7 @@ const architectsDaughter = Architects_Daughter({
 const Showcase = () => {
 	return (
 		<main
-			className="bg-scroll bg-no-repeat bg-cover bg-center h-[80vh] w-screen flex flex-col justify-between"
+			className="bg-scroll bg-no-repeat bg-cover bg-center min-h-[80vh] w-screen flex flex-col justify-between"
 			style={{ backgroundImage: `url(/assets/showcase-bg.png)` }}
 		>
 			<Header text={"white"} />

@@ -18,7 +18,7 @@ const Header = ({ text = "black" }: { text?: string }) => {
 				<Link href="/">
 					<AnimatedTooltip color={text} />
 				</Link>
-				<div className="hidden md:flex items-center justify-center gap-4">
+				<div className="hidden lg:flex items-center justify-center gap-4">
 					<nav className="flex gap-4">
 						{navLinks.map((link, index) => (
 							<Link

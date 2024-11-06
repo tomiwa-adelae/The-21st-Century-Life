@@ -14,6 +14,10 @@ export const navLinks = [
 		label: "Contact",
 	},
 	{
+		route: "/prince-adedapo",
+		label: "Our mentor",
+	},
+	{
 		route: "/videos",
 		label: "Our videos",
 	},

@@ -20,7 +20,7 @@ import { usePathname } from "next/navigation";
 export function MobileNavbar() {
 	const pathname = usePathname();
 	return (
-		<nav className="md:hidden">
+		<nav className="lg:hidden">
 			<Sheet>
 				<SheetTrigger asChild>
 					<Menu className="cursor-pointer" />
