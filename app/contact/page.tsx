@@ -7,6 +7,7 @@ import { ContactForm } from "@/components/ContactForm";
 import Footer from "@/components/shared/Footer";
 import { Phone } from "lucide-react";
 import type { Metadata } from "next";
+import { AOSProvider } from "@/components/shared/AOSProvider";
 
 export const metadata: Metadata = {
 	title: "Contact | The 21st Century Life",
@@ -22,6 +23,7 @@ const architectsDaughter = Architects_Daughter({
 const page = () => {
 	return (
 		<div>
+			<AOSProvider />
 			<Header />
 			<div className="container">
 				<Separator />

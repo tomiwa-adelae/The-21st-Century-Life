@@ -9,6 +9,7 @@ import { Architects_Daughter } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { AOSProvider } from "@/components/shared/AOSProvider";
 
 export const metadata: Metadata = {
 	title: "About | The 21st Century Life",
@@ -24,6 +25,7 @@ const architectsDaughter = Architects_Daughter({
 const page = () => {
 	return (
 		<div className="relative">
+			<AOSProvider />
 			<Spotlight
 				className="-top-40 left-0 md:left-60 md:-top-20"
 				fill="blue"

@@ -1,5 +1,6 @@
 import LearningObjectives from "@/components/LearningObjectives";
 import Register from "@/components/Register";
+import { AOSProvider } from "@/components/shared/AOSProvider";
 import Footer from "@/components/shared/Footer";
 import Showcase from "@/components/Showcase";
 import Speakers from "@/components/Speakers";
@@ -9,6 +10,7 @@ import Image from "next/image";
 export default function Home() {
 	return (
 		<div>
+			<AOSProvider />
 			<Showcase />
 			<Why />
 			<div className="container">

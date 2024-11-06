@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
-import { AOSProvider } from "@/components/shared/AOSProvider";
 import { Toaster } from "@/components/ui/toaster";
 
 const montserrat = Montserrat({
@@ -41,7 +40,6 @@ export default function RootLayout({
 					content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1"
 				/>
 			</Head>
-			<AOSProvider />
 			<body
 				className={`${montserrat.className} antialiased overflow-x-hidden`}
 			>
