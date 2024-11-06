@@ -225,7 +225,7 @@ const page = () => {
 						<a href="">
 							<Linkedin className="w-5 h-5 md:w-6 md:h-6 hover:text-blue-400" />
 						</a>
-						<a href="">
+						<a href="https://www.instagram.com/prince_adedapo_adelegan?igsh=ZDFja2Q0bTJ6NzN6">
 							<Instagram className="w-5 h-5 md:w-6 md:h-6 hover:text-blue-400" />
 						</a>
 					</div>
