@@ -7,7 +7,6 @@ import { Architects_Daughter } from "next/font/google";
 import Link from "next/link";
 
 import type { Metadata } from "next";
-import { AOSProvider } from "@/components/shared/AOSProvider";
 
 export const metadata: Metadata = {
 	title: "Our videos | The 21st Century Life",
@@ -23,7 +22,6 @@ const architectsDaughter = Architects_Daughter({
 const page = () => {
 	return (
 		<div>
-			<AOSProvider />
 			<Header />
 			<div className="container">
 				<Separator />
