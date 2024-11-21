@@ -6,14 +6,14 @@ import { Button } from "./ui/button";
 import Link from "next/link";
 
 const Countdown = () => {
-	const targetDate = new Date("2024-11-23T00:00:00"); // Target date set to October 15, 2024
+	const targetDate = new Date("2024-11-23T00:00:00");
 
 	const calculateTimeLeft = () => {
 		const now = new Date();
 		const difference = targetDate.getTime() - now.getTime();
 
 		if (difference <= 0) {
-			return null; // Countdown is finished
+			return null;
 		}
 
 		const days = Math.floor(difference / (1000 * 60 * 60 * 24));
