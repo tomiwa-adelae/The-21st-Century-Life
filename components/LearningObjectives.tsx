@@ -109,7 +109,7 @@ const LearningObjectives = async () => {
 								<span className="font-semibold">
 									Date:
 								</span>{" "}
-								16th November, 2024{" "}
+								16th November, 2025{" "}
 							</li>
 							<li>
 								<Check className="w-4 h-4 inline mr-2" />

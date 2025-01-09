@@ -38,7 +38,7 @@ const Footer = () => {
 				<Separator />
 				<div>
 					<p className="text-sm text-center md:text-left pt-8">
-						&copy; 2024 The 21st Century Life. All Rights Reserved.
+						&copy; 2025 The 21st Century Life. All Rights Reserved.
 					</p>
 				</div>
 			</div>

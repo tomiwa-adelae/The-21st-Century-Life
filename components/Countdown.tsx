@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 import Link from "next/link";
 
 const Countdown = () => {
-	const targetDate = new Date("2024-11-23T00:00:00");
+	const targetDate = new Date("2025-11-23T00:00:00");
 
 	const calculateTimeLeft = () => {
 		const now = new Date();

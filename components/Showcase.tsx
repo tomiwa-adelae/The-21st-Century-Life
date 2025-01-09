@@ -21,7 +21,7 @@ const Showcase = () => {
 						data-aos="fade-up"
 						data-aos-duration="1000"
 					>
-						16th of november, 2024
+						16th of november, 2025
 					</h4>
 					<div data-aos="fade-up" data-aos-duration="2000">
 						<h1

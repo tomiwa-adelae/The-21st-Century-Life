@@ -76,7 +76,7 @@ export const registerUser = async ({
                                          <h1>Event Details</h1>
                                          <p><strong>Event:</strong> Business Masterclass</p>
                                          <p><strong>Theme:</strong> Business Sustenance in the New Normal</p>
-                                         <p><strong>Date:</strong> 16th November 2024</p>
+                                         <p><strong>Date:</strong> 16th November 2025</p>
                                          <p><strong>Location:</strong> Metropolitan Club, 15 Kofo Abayomi St., Victoria Island, Lagos</p>
                                          <p><strong>Sessions:</strong> Morning (10AM - 1PM) & Evening (3PM - 7PM)</p>
                                          <br/>
