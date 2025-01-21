@@ -18,8 +18,8 @@ export const navLinks = [
 		label: "Our mentor",
 	},
 	{
-		route: "/videos",
-		label: "Our videos",
+		route: "/gallery",
+		label: "Our gallery",
 	},
 ];
 
