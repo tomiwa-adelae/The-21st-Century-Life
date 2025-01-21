@@ -13,7 +13,7 @@ import { getImages } from "@/lib/actions/gallery.actions";
 export const metadata: Metadata = {
 	title: "Our gallery | The 21st Century Life",
 	description:
-		"Explore our gallery showcasing captivating moments, stunning visuals, and memorable highlights from our events. Discover the essence of The 21st Century Life in every image.",
+		"Explore our gallery where we showcase captivating moments, stunning visuals, and memorable highlights from our events. Discover the essence of The 21st Century Life in every image.",
 };
 
 const architectsDaughter = Architects_Daughter({
