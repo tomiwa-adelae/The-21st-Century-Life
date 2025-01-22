@@ -8,7 +8,6 @@ import Link from "next/link";
 
 import type { Metadata } from "next";
 import ImageLibrary from "@/components/ImageLibrary";
-import { getImages } from "@/lib/actions/gallery.actions";
 
 export const metadata: Metadata = {
 	title: "Our gallery | The 21st Century Life",
@@ -22,10 +21,6 @@ const architectsDaughter = Architects_Daughter({
 });
 
 const page = async () => {
-	const gallery = await getImages();
-
-	const secureUrls = gallery.resources.map((image: any) => image.secure_url);
-
 	return (
 		<div>
 			<Header />
