@@ -46,7 +46,7 @@ export function MobileNavbar() {
 								<SheetClose asChild key={index}>
 									<Link
 										href={link.route}
-										className={`flex items-center justify-start w-full rounded-md px-3 py-2 text-xs font-bold transition  ${
+										className={`flex items-center justify-start w-full rounded-md px-3 py-2 text-xs font-bold transition uppercase ${
 											isActive
 												? "text-blue-400"
 												: "bg-transparent"
