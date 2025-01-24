@@ -1,3 +1,4 @@
+import GallerySnippet from "@/components/GallerySnippet";
 import LearningObjectives from "@/components/LearningObjectives";
 import Register from "@/components/Register";
 import Footer from "@/components/shared/Footer";
@@ -31,6 +32,8 @@ export default function Home() {
 				/>
 			</div>
 			<div className="container">
+				<GallerySnippet />
+				<Separator />
 				<Register />
 				<Separator />
 			</div>
