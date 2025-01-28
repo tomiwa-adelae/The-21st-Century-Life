@@ -1,4 +1,4 @@
-export const photos = [
+export default const photos = [
 	{
 		asset: "/assets/images/1.jpg",
 	},
