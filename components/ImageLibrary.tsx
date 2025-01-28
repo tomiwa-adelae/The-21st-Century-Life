@@ -3,9 +3,9 @@ import React from "react";
 import Image from "next/image";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-import {images} from "@/constants/images";
+import { images } from "@/constants/images";
 
-export function ImageLibrary({ images }: any) {
+export const ImageLibrary = () => {
 	const [open, setOpen] = React.useState(false);
 	const [currentIndex, setCurrentIndex] = React.useState(0);
 
@@ -13,6 +13,8 @@ export function ImageLibrary({ images }: any) {
 		setCurrentIndex(index);
 		setOpen(true);
 	};
+
+	console.log(images);
 
 	return (
 		<div>
@@ -24,7 +26,7 @@ export function ImageLibrary({ images }: any) {
 							width={1000}
 							height={1000}
 							alt={`Image ${index + 1}`}
-							className="cursor-pointer rounded-lg w-full h-full object-cover"
+							className="cursor-pointer rounded-lg aspect-square object-cover"
 						/>
 					</div>
 				))}
@@ -39,4 +41,4 @@ export function ImageLibrary({ images }: any) {
 			)}
 		</div>
 	);
-}
+};

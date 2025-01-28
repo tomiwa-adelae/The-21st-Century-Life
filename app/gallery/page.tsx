@@ -20,7 +20,7 @@ const architectsDaughter = Architects_Daughter({
 	weight: ["400"],
 });
 
-const page = async () => {
+const page =  () => {
 	return (
 		<div>
 			<Header />
