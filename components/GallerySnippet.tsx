@@ -1,5 +1,5 @@
 import { Architects_Daughter } from "next/font/google";
-import ImageLibrary from "./ImageLibrary";
+import {ImageLibrary} from "./ImageLibrary";
 import { Button } from "./ui/button";
 import Link from "next/link";
 

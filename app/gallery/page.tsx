@@ -7,7 +7,7 @@ import { Architects_Daughter } from "next/font/google";
 import Link from "next/link";
 
 import type { Metadata } from "next";
-import ImageLibrary from "@/components/ImageLibrary";
+import {ImageLibrary} from "@/components/ImageLibrary";
 
 export const metadata: Metadata = {
 	title: "Our gallery | The 21st Century Life",
