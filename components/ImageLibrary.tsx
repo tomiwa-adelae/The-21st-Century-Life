@@ -1,40 +1,42 @@
 "use client";
-
-import { useState } from "react";
-
-import { RowsPhotoAlbum } from "react-photo-album";
-import "react-photo-album/rows.css";
-
+import React from "react";
+import Image from "next/image";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+import images from "@/constants/images";
 
-// import optional lightbox plugins
-import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
-import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
-import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
-import Zoom from "yet-another-react-lightbox/plugins/zoom";
-import "yet-another-react-lightbox/plugins/thumbnails.css";
-import photos from "@/constants/images";
+export function ImageLibrary({ images }: any) {
+	const [open, setOpen] = React.useState(false);
+	const [currentIndex, setCurrentIndex] = React.useState(0);
 
-const ImageLibrary = () => {
-	const [index, setIndex] = useState(-1);
+	const handleOpen = (index: number) => {
+		setCurrentIndex(index);
+		setOpen(true);
+	};
+
 	return (
 		<div>
-			<RowsPhotoAlbum
-				photos={photos}
-				targetRowHeight={150}
-				onClick={({ index }) => setIndex(index)}
-			/>{" "}
-			<Lightbox
-				slides={photos}
-				open={index >= 0}
-				index={index}
-				close={() => setIndex(-1)}
-				// enable optional lightbox plugins
-				plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
-			/>
+			<div className="grid grid-cols-3 lg:grid-cols-4 gap-4">
+				{images.map((image: any, index: number) => (
+					<div key={index} onClick={() => handleOpen(index)}>
+						<Image
+							src={image.src}
+							width={1000}
+							height={1000}
+							alt={`Image ${index + 1}`}
+							className="cursor-pointer rounded-lg w-full h-full object-cover"
+						/>
+					</div>
+				))}
+			</div>
+			{open && (
+				<Lightbox
+					open={open}
+					close={() => setOpen(false)}
+					slides={images}
+					index={currentIndex}
+				/>
+			)}
 		</div>
 	);
-};
-
-export default ImageLibrary;
+}
