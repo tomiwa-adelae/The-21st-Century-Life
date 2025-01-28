@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-import images from "@/constants/images";
+import {images} from "@/constants/images";
 
 export function ImageLibrary({ images }: any) {
 	const [open, setOpen] = React.useState(false);
