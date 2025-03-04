@@ -176,6 +176,7 @@ export function ContactForm() {
 						}}
 						variant={"white"}
 						type="submit"
+						size={"lg"}
 					>
 						Submit
 					</Button>

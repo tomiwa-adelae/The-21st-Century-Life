@@ -1,5 +1,5 @@
 import { Architects_Daughter } from "next/font/google";
-import {ImageLibrary} from "./ImageLibrary";
+import { ImageLibrary } from "./ImageLibrary";
 import { Button } from "./ui/button";
 import Link from "next/link";
 
@@ -32,7 +32,7 @@ const GallerySnippet = () => {
 					<ImageLibrary />
 				</div>
 				<div className="flex items-center justify-center">
-					<Button asChild data-aos="fade-up">
+					<Button size={"lg"} asChild data-aos="fade-up">
 						<Link href="/gallery">See more gallery</Link>
 					</Button>
 				</div>

@@ -68,6 +68,7 @@ const Speakers = () => {
 						data-aos="fade-up"
 						data-aos-duration="2000"
 						asChild
+						size={"lg"}
 					>
 						<Link href="/prince-adedapo">
 							Learn more about Adedapo

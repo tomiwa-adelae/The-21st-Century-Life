@@ -303,6 +303,7 @@ export function RegistrationForm() {
 						}}
 						disabled={form.formState.isSubmitting}
 						type="submit"
+						size={"lg"}
 					>
 						{form.formState.isSubmitting
 							? "Submitting..."

@@ -7,7 +7,7 @@ import { Architects_Daughter } from "next/font/google";
 import Link from "next/link";
 
 import type { Metadata } from "next";
-import {ImageLibrary} from "@/components/ImageLibrary";
+import { ImageLibrary } from "@/components/ImageLibrary";
 
 export const metadata: Metadata = {
 	title: "Our gallery | The 21st Century Life",
@@ -20,7 +20,7 @@ const architectsDaughter = Architects_Daughter({
 	weight: ["400"],
 });
 
-const page =  () => {
+const page = () => {
 	return (
 		<div>
 			<Header />
@@ -97,6 +97,7 @@ const page =  () => {
 							variant={"outline"}
 							asChild
 							data-aos="fade-up"
+							size={"lg"}
 						>
 							<Link href="/register">
 								Register for Business Masterclass

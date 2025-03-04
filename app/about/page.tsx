@@ -170,6 +170,7 @@ const page = () => {
 							variant={"outline"}
 							asChild
 							data-aos="fade-up"
+							size={"lg"}
 						>
 							<Link href="/register">
 								Register for Business Masterclass

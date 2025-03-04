@@ -70,7 +70,7 @@ const Countdown = () => {
 						count={timeLeft.seconds.toString().padStart(2, "0")}
 					/>
 				</div>
-				<Button asChild className="w-full mt-4">
+				<Button size={"lg"} asChild className="w-full mt-4">
 					<Link href="/register">Register now</Link>
 				</Button>
 			</div>

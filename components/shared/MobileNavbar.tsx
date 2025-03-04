@@ -58,7 +58,7 @@ export function MobileNavbar() {
 							);
 						})}
 						<SheetClose>
-							<Button className="w-full" asChild>
+							<Button size={"lg"} className="w-full" asChild>
 								<Link href="/register">Register now</Link>
 							</Button>
 						</SheetClose>

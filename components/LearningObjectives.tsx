@@ -223,7 +223,7 @@ const LearningObjectives = async () => {
 						for entrepreneurs, business owners, and professionals
 						ready to thrive in today’s business landscape.
 					</p>
-					<Button asChild className="w-full mt-4">
+					<Button size={"lg"} asChild className="w-full mt-4">
 						<Link href="/register">Register now</Link>
 					</Button>
 				</div>
