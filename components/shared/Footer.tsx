@@ -4,6 +4,7 @@ import { Separator } from "../ui/separator";
 import { address, emailAddress } from "@/constants";
 
 const Footer = () => {
+	const year = new Date().getFullYear();
 	return (
 		<div className="py-8">
 			<div className="container">
@@ -38,7 +39,8 @@ const Footer = () => {
 				<Separator />
 				<div>
 					<p className="text-sm text-center md:text-left pt-8">
-						&copy; 2025 The 21st Century Life. All Rights Reserved.
+						&copy; {year} The 21st Century Life. All Rights
+						Reserved.
 					</p>
 				</div>
 			</div>

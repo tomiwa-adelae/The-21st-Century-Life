@@ -173,7 +173,7 @@ export function RegistrationForm() {
 							onChange={handlePhoneNumberChange}
 							defaultCountry="NG"
 							// flagComponent={true}
-							className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-[16px] sm:text-sm  ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+							className="flex h-14 w-full rounded-md border border-input bg-background px-3 py-2 text-[16px] sm:text-sm  ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50"
 						/>
 						{error && (
 							<p className="text-sm font-medium text-destructive mt-2">
